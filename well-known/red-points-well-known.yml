@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/* on redpoints.com hosts
+host: https://www.redpoints.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Red Points publishes no /.well-known/ discovery documents. A public llms.txt
+  IS published at https://www.redpoints.com/llms.txt (Yoast-generated, saved at
+  llms/red-points-llms.txt). No public developer/API subdomain resolves
+  (developer./api./docs.redpoints.com do not resolve).
